@@ -40,13 +40,13 @@ section{
 #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.95rem;
     color: #fff;
-    opacity: 70%;
+    opacity: .5;
     letter-spacing: 0.0625em;
     transition: 0.2s ease-in-out;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-    opacity: 100%;
+    opacity: 1;
 } 
 
 
@@ -137,7 +137,7 @@ header img.arrowDown:hover{
     color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    opacity: 70%;
+    opacity: .5;
     filter: saturate(0);
 }
 
@@ -149,7 +149,7 @@ header img.arrowDown:hover{
 .flagDiv:hover, .flag2{
     text-decoration: none;
     color: white;
-    opacity: 100%;
+    opacity: 1;
     filter: saturate(1);
 }
 
@@ -308,12 +308,12 @@ header div.container{
 }
 
 .infoItem{
-    opacity: 50%;
+    opacity: .5;
     transition: .5s ease-in-out all;
 }
 
 .infoItem:hover{
-    opacity: 100%;
+    opacity: 1;
 }
 
 .infoItem i{
