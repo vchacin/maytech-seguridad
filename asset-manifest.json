@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c23760fa.chunk.css",
+    "main.js": "/static/js/main.609a9dd8.chunk.js",
+    "main.js.map": "/static/js/main.609a9dd8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8cfd547e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8cfd547e.js.map",
+    "static/js/2.afbfacb1.chunk.js": "/static/js/2.afbfacb1.chunk.js",
+    "static/js/2.afbfacb1.chunk.js.map": "/static/js/2.afbfacb1.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.91e40502b05edcdf551fe84f265b0e32.js": "/precache-manifest.91e40502b05edcdf551fe84f265b0e32.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c23760fa.chunk.css.map": "/static/css/main.c23760fa.chunk.css.map",
+    "static/js/2.afbfacb1.chunk.js.LICENSE.txt": "/static/js/2.afbfacb1.chunk.js.LICENSE.txt",
+    "static/media/custom.css": "/static/media/Paso4.ea9abdb5.jpg",
+    "static/media/Alma.png": "/static/media/Alma.84bfbacb.png",
+    "static/media/Belden.jpg": "/static/media/Belden.72538499.jpg",
+    "static/media/Clandestino.webp": "/static/media/Clandestino.e0213096.webp",
+    "static/media/Condumex.jpg": "/static/media/Condumex.474761d9.jpg",
+    "static/media/Corasol.png": "/static/media/Corasol.ba8a680b.png",
+    "static/media/DKS.jpg": "/static/media/DKS.959225da.jpg",
+    "static/media/Epcom.jpg": "/static/media/Epcom.6e8aa55d.jpg",
+    "static/media/FAAC.jpg": "/static/media/FAAC.db2e43dc.jpg",
+    "static/media/Logo.png": "/static/media/Logo.fc75480e.png",
+    "static/media/Playacar.png": "/static/media/Playacar.4ba4adf3.png",
+    "static/media/Vidanta.png": "/static/media/Vidanta.6d1ae70b.png",
+    "static/media/eeuu.png": "/static/media/eeuu.6872ec3f.png",
+    "static/media/mex.png": "/static/media/mex.fc93bc0f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8cfd547e.js",
+    "static/js/2.afbfacb1.chunk.js",
+    "static/css/main.c23760fa.chunk.css",
+    "static/js/main.609a9dd8.chunk.js"
+  ]
+}
