@@ -1,0 +1,1020 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    section{
+        height: auto;
+    }
+}
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #212529;
+}
+
+#mainNav .navbar-toggler {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#mainNav .navbar-nav:first-of-type{
+    border-bottom: 1px solid white;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 0.95rem;
+    color: #fff;
+    opacity: 70%;
+    letter-spacing: 0.0625em;
+    transition: 0.2s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    opacity: 100%;
+} 
+
+
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border: none;
+        background-color: transparent;
+        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    }
+    #mainNav .navbar-nav .nav-item {
+        margin-right: 1rem;
+    }
+    #mainNav .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+}
+
+header.masthead {
+padding: 7rem 7rem 6rem;
+text-align: center;
+color: #fff;
+background-image: url("./assets/img/Home.png");
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: center center;
+background-size: cover;
+height: 100vh;
+}
+header.masthead .masthead-subheading {
+font-size: 0.6rem;
+line-height: 1rem;
+margin-bottom: 5px;
+}
+header.masthead .masthead-heading {
+font-size: 3.25rem;
+font-weight: 700;
+line-height: 3.25rem;
+letter-spacing: 0.1em;
+margin-bottom: 2rem;
+}
+header img{
+    width: 40%;
+}
+header div.container{
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        padding: 8rem 15rem 12.5rem;
+    }
+    header.masthead .masthead-subheading {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.1rem;
+    }
+    header.masthead .masthead-heading {
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: 0.05em;
+        margin-bottom: 4rem;
+    }
+}
+
+header img.arrowDown{
+    width: 2rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+header img.arrowDown:hover{
+    opacity: .5;
+}
+
+.flagContainer{
+    margin-top: 0.6rem;
+}
+
+.flagContainer p{
+    margin-top: 0.1rem;
+}
+
+.flagDiv{
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    opacity: 70%;
+    filter: saturate(0);
+}
+
+.flag{
+    width: 20px;
+    height: 20px;
+}
+
+.flagDiv:hover, .flag2{
+    text-decoration: none;
+    color: white;
+    opacity: 100%;
+    filter: saturate(1);
+}
+
+.paddingXaxis{
+    padding: 17rem 5rem 12.5rem 15rem;
+}
+
+.btn-contact{
+    border:1px solid white;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-contact:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.404) !important;
+    border:1px solid white;
+}
+
+.divisionLine{
+    width: 50px;
+    height: 3px;
+    background: #0C2029;
+}
+
+.tittleHighlighted{
+    background-color: white;
+    color: #0C2029;
+    font-weight: 700;
+    height: 48px;
+    letter-spacing: 0.15em;
+    display: inline-block;
+}
+
+header div.container{
+    border-bottom: 1px solid white;
+}
+
+.sectionPadding{
+    padding: 5rem 15rem 1rem;
+}
+
+.sectionPadding1{
+    padding: 2rem 15rem 0;
+}
+
+.sectionPadding2{
+    padding: 5rem 15rem 0;
+}
+
+.sectionTittle{
+    font-family: 'Fjalla One', sans-serif !important;
+    font-size: 3rem;
+    letter-spacing: 0.03em;
+}
+
+.sectionDescription{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.87rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1em;
+}
+
+.txt-black{
+    color: #313131;
+    opacity: 0.56;
+}
+
+.btn-blue-cta{
+    background: #528DE5;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: .5rem 1.2rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn-blue-cta:hover{
+    background: white;
+    box-shadow: 0px 8px 23px -1px #999999;
+}
+
+.btn-transparent{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: .5rem 1.2rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn-transparent:hover{
+    background: white;
+    box-shadow: 0px 8px 23px -1px #999999;
+}
+
+/* INFO */
+
+.carousel-control-prev{
+    width: 30%;
+}
+
+.carousel-control-next{
+    width: 30%;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #C4C4C4;
+}
+
+.infoCarousel{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    letter-spacing: 0.08em;
+}
+
+.carouselArrow{
+    color: #1D416E;
+}
+
+.infoDiv{
+    background-color: #1D416E;
+    text-align: center;
+}
+
+.infoDiv h3{
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+}
+
+.infoDiv h3.borderR{
+    border-right: 2px solid white;
+}
+
+.infoDiv p{
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+}
+
+.infoItem{
+    opacity: 50%;
+    transition: .5s ease-in-out all;
+}
+
+.infoItem:hover{
+    opacity: 100%;
+}
+
+.infoItem i{
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 1rem;
+}
+
+/* TRANKS */
+
+.thanksDiv{
+    background: 
+        linear-gradient(180deg, #1D416E 5.19%, rgba(46, 73, 107, 0) 100%),
+        url("./assets/img/Agradecimiento.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-position-y: 40%;
+    background-size: 100%;
+    height: 60%;
+}
+
+.thanksItem{
+    background-color: #2E496B;
+    border-radius: 100px;
+}
+
+.thanksItem i{
+    font-size: 4rem;
+    padding: 2rem 1.5rem;
+}
+
+.thanksItem2 p{
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+}
+
+.thanksDescriptionDiv h4{
+    font-family: 'Fjalla One', sans-serif !important;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+}
+
+.thanksDescriptionDiv ul{
+    list-style: none; 
+    font-weight: normal;
+    font-size: .8rem;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+}
+
+.thanksDescriptionDiv ul p.descriptionTitle{
+    font-weight: bold;
+}
+
+.thanksDescriptionDiv ul i{
+    font-size: .5rem;
+    color: #528DE5;
+}
+
+/* SERVICES 1*/
+
+.services1{
+    clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0% 15%);
+    background-color: #EDEDED;
+}
+
+.serviceItem{
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px 2px rgba(0, 0, 0, 0);
+    transition: 0.7s ease-in-out all;
+}
+
+.serviceItem:hover{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+.serviceItem h4{
+    font-weight: bolder;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.1em;
+}
+
+.serviceItem p{
+    font-weight: 700;
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1em;
+}
+
+
+/* SERVICES 2*/
+
+.services2{
+    background-color: #EDEDED;
+}
+
+.services2 p{
+    font-weight: bolder;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1em;
+}
+
+.services2 i{
+    color: #2e4c6b;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+.services2 div.service2Item {
+    text-align: center;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out all;
+}
+
+.services2 div.service2Item:hover {
+    opacity: 1;
+}
+
+.services2Container h4{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+}
+
+.servicesDescription p{
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    padding: .3rem 0;
+}
+
+.servicesDescription i{
+    color:#528DE5;
+    padding-right: 5px;
+}
+
+.servicePrimary{
+    font-weight: bold;
+}
+
+.serviceSecundary{
+    margin-left: 19px;
+}
+
+/* SOLUTIONS */
+
+.solutionsDiv{
+    position: relative;
+    width: 50%;
+}
+
+.solutionsText{
+    position: absolute;
+    z-index: 2;
+}
+
+.step {
+    height: 80%;
+}
+
+.step:hover{
+    height: 100%;
+}
+
+.step1{
+    background: 
+        linear-gradient(180deg, rgba(168, 168, 168, 0.85) 0%, rgba(168, 168, 168, 0.425) 100%),
+        url("./assets/img/Paso1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-size: 130%;
+    transition: 1s ease-in-out all;
+}
+
+.step1:hover{
+    background: 
+        linear-gradient(180deg, #2E496B 7.16%, rgba(46, 73, 107, 0) 100%),
+        url("./assets/img/Paso1.jpg");
+    background-position-x: center;
+    background-size: 130%;
+    display: flex;
+}
+
+.step2{
+    background: 
+        linear-gradient(180deg, rgba(168, 168, 168, 0.85) 0%, rgba(168, 168, 168, 0.425) 100%),
+        url("./assets/img/Paso2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-size: 130%;
+    transition: 1s ease-in-out all;
+}
+
+.step2:hover{
+    background: 
+        linear-gradient(180deg, #2E496B 7.16%, rgba(46, 73, 107, 0) 100%),
+        url("./assets/img/Paso2.jpg");
+    background-position-x: center;
+    background-size: 130%;
+}
+
+.step3{
+    background: 
+        linear-gradient(180deg, rgba(168, 168, 168, 0.85) 0%, rgba(168, 168, 168, 0.425) 100%),
+        url("./assets/img/Paso3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-size: 130%;
+    transition: 1s ease-in-out all;
+}
+
+.step3:hover{
+    background: 
+        linear-gradient(180deg, #2E496B 7.16%, rgba(46, 73, 107, 0) 100%),
+        url("./assets/img/Paso3.jpg");
+    background-position-x: center;
+    background-size: 130%;
+}
+
+.step4{
+    background: 
+        linear-gradient(180deg, rgba(168, 168, 168, 0.85) 0%, rgba(168, 168, 168, 0.425) 100%),
+        url("./assets/img/Paso4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-size: 130%;
+    transition: 1s ease-in-out all;
+}
+
+.step4:hover{
+    background: 
+        linear-gradient(180deg, #2E496B 7.16%, rgba(46, 73, 107, 0) 100%),
+        url("./assets/img/Paso4.jpg");
+    background-position-x: center;
+    background-size: 130%;
+}
+
+.step p.stepNumber{
+    font-size: 4rem;
+    font-family: 'Fjalla One', sans-serif !important;
+}
+
+.step p.stepName{
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.1em;
+    width: 150px;
+    font-family: 'Fjalla One', sans-serif !important;
+}
+
+.step p.stepDescription{
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1em;
+    width: 250px;
+    display:none;
+}
+
+.stepContainer{
+    position: absolute;
+    bottom:0;
+}
+
+
+/* ABOUT */
+
+.aboutDiv{
+    background:
+        linear-gradient(1.71deg, rgba(10, 29, 36, 0.7) 1.07%, rgba(255, 255, 255, 0) 98.19%),
+        url("./assets/img/About.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: 63%;
+    background-position-y: 52%;
+    background-size: 100%;
+    height: 70%;
+}
+
+.aboutBrandDiv h4{
+    font-family: 'Fjalla One', sans-serif !important;
+    font-size: 1.5rem;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.brand{
+    width: 10%;
+    opacity: .6;
+}
+
+/* CONTACT */
+
+.contactDiv{
+    background: 
+        linear-gradient(0.04deg, #0A1D24 0.2%, rgba(196, 196, 196, 0) 99.57%),
+        url("./assets/img/Contacto.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: 50%;
+    background-position-y: 40%;
+    background-size: 180%;
+    position: relative;
+}
+
+.contactContainer{
+    position: absolute;
+    bottom: 0;
+}
+
+.checkListContainer{
+    max-width: 30%;
+}
+
+.formContainer{
+    background: #528de5b7;
+    width: 60%;
+    margin: .2rem 3rem 0;
+}
+
+.formContainer label{
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.2em;
+}
+
+.formContainer input:focus{
+    outline: none;
+}
+
+.formContainer div.formDirection i{
+    font-size: .8rem;
+}
+
+.formContainer div.formDirection p{
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: .8rem;
+    letter-spacing: 0.1em;
+}
+
+.btn-enviar{
+    background: #2E496B;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.btn-enviar:hover{
+    background: white;
+}
+
+.checkList i{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.548);
+    font-size: .7rem;
+    padding: .3rem;
+    margin-right: 1.5rem;
+    border-radius: 50px;
+    border:2px solid #528DE5;
+    transition: all 0.6s ease-in-out;
+}
+
+.checkList{
+    opacity: .5;
+    max-width: 300px;
+    transition: all 0.6s ease-in-out;
+}
+.checkList:hover{
+    opacity: 1;
+}
+
+.checkList:hover i{
+    background-color: #528DE5;
+    color: rgb(255, 255, 255);
+}
+
+.checkDescription h4, p{
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.1em;
+}
+.checkDescription h4{
+    font-weight: bold;
+}
+.checkListLine {
+	position: absolute;
+	height: 4px;
+	background-color: whitesmoke;
+	top: 62px;
+	width: 2px;
+    height: 49.5px;
+	left: 12px;
+}
+.checkListLine1 {
+	position: absolute;
+	height: 4px;
+	background-color: whitesmoke;
+	top: 137px;
+	width: 2px;
+    height: 49.5px;
+	left: 12px;
+}
+.checkListLine2 {
+	position: absolute;
+	height: 4px;
+	background-color: whitesmoke;
+	top: 212px;
+	width: 2px;
+    height: 49.5px;
+	left: 12px;
+}
+
+/* CLIENTS */
+
+.clientsDiv{
+    background-image: url("./assets/img/Map.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 60%;
+}
+
+.clientsDiv h4{
+    font-family: 'Fjalla One', sans-serif !important;
+    font-size: 1.5rem;
+    letter-spacing: 0.03em;
+}
+
+.clientsDiv ul{
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.clientsDiv li{
+    padding: .5rem 2rem;
+    margin-bottom: .2rem;
+    transition: 1s ease-in-out all;
+}
+
+.clientsDiv li:hover{
+    background-color: rgba(82, 141, 229, 0.8);
+}
+
+.clientsDiv img.client{
+    filter: saturate(0);
+    opacity: .5;
+    transition: .5s ease-in-out all;
+}
+
+.clientsDiv img.client:hover{
+    filter: saturate(1);
+    opacity: 1;
+}
+
+.client1, .client2, .client3, .client4, .client5, .client11 {
+    width:16%;
+}
+
+.client6, .client7, .client8, .client9, .client10 {
+    width:7%;
+}
+
+/* BLOG */
+
+.blogDiv{
+    background: 
+        linear-gradient(180deg, rgba(46, 73, 107, 0.5) 0%, rgba(46, 73, 107, 0) 100%),
+        url("./assets/img/Blog.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-position-y: 40%;
+    background-size: cover;
+}
+
+.blogDiv h5{
+    font-family: 'Fjalla One', sans-serif !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+}
+
+.blogDiv p{
+    font-size: 0.8rem;
+}
+
+.blogPost{
+    width: 200px;
+    height: 300px;
+}
+
+.blogItem{
+    transition: .3s ease-in-out;
+}
+
+.blogItem:hover{
+    cursor: pointer;
+    background-color: rgb(235, 235, 235) !important;
+}
+
+.readMore{
+    color: #2E496B;
+    transition: .3s ease-in-out;
+}
+
+.readMore:hover{
+    color: #487ab385;
+}
+
+.readMore i{
+    font-size: 0.6rem;
+    margin-top: 0.1rem;
+}
+
+/* FOOTER */
+
+.footerDiv{
+    background-color: #0A1D24;
+    position: relative;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.copyDiv{
+    position: absolute;
+    bottom: 0;
+    width: 66%;
+    padding-bottom: 0;
+    margin: 0 15rem;
+    margin-bottom: 0;
+}
+
+.copyright{
+    background-color: rgba(82, 141, 229, 0.8);
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+}
+
+.footerTittle{
+    font-family: 'Fjalla One', sans-serif !important;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+}
+
+.footerLine{
+    background: #FCFCFC;
+    width: 25%;
+    height: 1vh;
+}
+
+.footerDiv div.rrss i{
+    color: #0A1D24;
+    background-color: white;
+    padding: 6px;
+    margin: 0 10px 0 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.footerDiv div.rrss i:hover{
+    background-color: rgba(255, 255, 255, 0.384);
+}
+
+.fa-facebook-f{
+    padding: 5px 8px !important;
+}
+
+.footerDiv img{
+    width: 28%;
+}
+
+.footerDiv p {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    line-height: 1.1rem;
+}
+
+.footerDiv input{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+}
+
+.footerDiv input:hover{
+    background-color: white;
+}
+
+.footerDiv input:focus{
+    outline: none;
+    background-color: white;
+    border: 1px solid rgba(82, 141, 229, 0.8);
+}
+
+.footerDiv input::placeholder {
+    color: white;
+    opacity: 0.5; 
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+}
+
+.footerDiv button{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 0.3rem .5rem;
+    transition: 0.8s ease-in-out;
+}
+
+.footerDiv button:hover{
+    background-color: rgba(82, 141, 229, 0.8);
+    border: 1px solid rgba(82, 141, 229, 0.8);
+    color: white;
+}
+
+/* Whatsapp*/
+.whats-app {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 5%;
+    right: 2%;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+}
+.whats-app:hover {
+    bottom: 7%;
+}
+.my-float {
+    margin-top: 16px;
+}  
+
+@media (max-width: 992px) {
+    .paddingXaxis{
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .paddingXaxis{
+        padding: 0 1rem;
+    }
+    .sectionPadding{
+        padding: 1rem 1rem 0.1rem;
+    }
+    .sectionTittle{
+        font-size: 0.5rem;
+        letter-spacing: 0.06em;
+    }
+    .copyright{
+        letter-spacing: 0.09rem;
+        font-size: 0.5rem;
+        padding: 1rem 0;
+    }
+    .footerTittle{
+        font-size: 0.3rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 4px;
+    }
+}
