@@ -14,7 +14,7 @@ export class Masterhead extends React.Component {
                     </div>
                     <div className="masthead-heading text-uppercase">SEGURIDAD ELECTRÓNICA PARA TODOS <div className="tittleHighlighted">TUS PROYECTOS</div></div>
                 </div>
-                <img className="arrowDown" src={arrowDown} alt="arrow down"/>
+                <a href="#info"><img className="arrowDown" src={arrowDown} alt="arrow down"/></a>
             </header>
         );
     }

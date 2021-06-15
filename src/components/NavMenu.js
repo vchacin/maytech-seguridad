@@ -15,16 +15,16 @@ export class NavMenu extends Component {
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbarBorder navbar-nav text-uppercase mr-auto font-weight-bold">
                   <li className="nav-item active">
-                    <a className="nav-link opacity" href="#home">Inicio</a>
+                    <a className="nav-link" href="#home">Inicio</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link opacity" href="#services">Servicios</a> 
+                    <a className="nav-link" href="#services">Servicios</a> 
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link opacity" href="#about">Nosotros</a>
+                    <a className="nav-link" href="#about">Nosotros</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link opacity" href="#blog">Blog</a> 
+                    <a className="nav-link" href="#blog">Blog</a> 
                   </li>
                 </ul>
 

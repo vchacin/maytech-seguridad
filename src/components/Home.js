@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Masterhead } from './Masterhead';
 import { Section } from './shared/Section';
+import { ServicesContainer } from './services/ServicesContainer';
 import arrowRight from '../assets/svg/arrowRight.png';
 import arrowLeft from '../assets/svg/arrowLeft.png';
 import logo from '../assets/img/Logo.png';
@@ -10,11 +11,25 @@ import control from '../assets/img/Control.png';
 import cctv from '../assets/img/CCTV.png';
 import intrusion from '../assets/img/Intrusion.png';
 import syscom from '../assets/img/Syscom.png';
+
 import belden from '../assets/brands/Belden.jpg';
 import condumex from '../assets/brands/Condumex.jpg';
 import dks from '../assets/brands/DKS.jpg';
 import epcom from '../assets/brands/Epcom.jpg';
 import faac from '../assets/brands/FAAC.jpg';
+
+import grandstream from '../assets/brands/GrandStream.jpg';
+import hangua from '../assets/brands/Hangua.jpg';
+import hikvision from '../assets/brands/Hikvision.jpg';
+import honeywell from '../assets/brands/Honeywell.jpg';
+import idis from '../assets/brands/IDIS.jpg';
+
+import linkedpro from '../assets/brands/Linkedpro.jpg';
+import samsung from '../assets/brands/Samsung.jpg';
+import tplink from '../assets/brands/TP-link.jpg';
+import ubiquiti from '../assets/brands/Ubiquiti.jpg';
+import zteco from '../assets/brands/Zteco.jpg';
+
 import alma from '../assets/clients/Alma.png';
 import vidanta from '../assets/clients/Vidanta.png';
 import jardines from '../assets/clients/Jardines.png';
@@ -32,12 +47,25 @@ import { Contact } from './Contact';
 export class Home extends Component {
   static displayName = Home.name;
 
+  constructor(props){
+    super(props);
+    this.state = {
+      service: ""
+    }
+  }
+
+  SetService(nombre){
+    this.setState({
+      service: nombre
+    })
+  }
+
   render () {
       return (
         <div>
           <Masterhead/>
           <Contact/>
-          <Section> {/* INFO */}
+          <Section id="info"> {/* INFO */}
             <div id="carouselExampleFade" className="bg-light carousel slide carousel-fade w-100 h-50 sectionPadding" data-ride="carousel">
               <ol className="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -67,15 +95,11 @@ export class Home extends Component {
 
             <div className="infoDiv w-100 h-50 sectionPadding">
                 <div className="row text-uppercase text-white">
+
                   <div className="col-lg-3 p-0 infoItem">
                     <div className="infoSvg pb-2"><i className="fas fa-building"></i></div>
                     <h3 className="borderR">146</h3>
                     <p className="px-5">Espacios seguros</p>
-                  </div>
-                  <div className="col-lg-3 p-0 infoItem">
-                    <div className="infoSvg pb-2"><i className="fas fa-calendar-check"></i></div>
-                    <h3 className="borderR">960</h3>
-                    <p className="px-5">Dias de monitoreo</p>
                   </div>
                   <div className="col-lg-3 p-0 infoItem">
                     <div className="infoSvg pb-2"><i className="fas fa-shield-alt"></i></div>
@@ -84,9 +108,15 @@ export class Home extends Component {
                   </div>
                   <div className="col-lg-3 p-0 infoItem">
                     <div className="infoSvg pb-2"><i className="fas fa-shopping-cart"></i></div>
-                    <h3>1072</h3>
+                    <h3 className="borderR">1072</h3>
                     <p className="px-5">Equipos profesionales vendidos</p>
                   </div>
+                  <div className="col-lg-3 p-0 infoItem">
+                    <div className="infoSvg pb-2"><i className="fas fa-wrench"></i></div>
+                    <h3 className="">960</h3>
+                    <p className="px-5">Pólizas de mantenimiento</p>
+                  </div>
+
                 </div>
             </div>
           </Section>
@@ -148,26 +178,31 @@ export class Home extends Component {
           <Section id="services"> {/* SERVICES 1 */}
             <div className="services1 w-100 h-100 text-center">
               <div className="row sectionPadding text-center d-flex justify-content-center text-uppercase mt-4">
+
                 <div className="serviceItem col-lg-3 py-2 mx-2 mb-3">
                   <img className="pt-2 pb-2" src={venta} alt="ventas"/>
                   <h4 className="py-2 txt-black">Venta de equipo</h4>
                   <p className="pb-2 m-0 txt-black">Proveemos equipo profesional para tu proyecto</p>
                 </div>
+
                 <div className="serviceItem col-lg-3 py-2 mx-2 mb-3">
                   <img className="pt-2" src={seguridad} alt="seguridad"/>
                   <h4 className="py-2 txt-black">Seguridad integral</h4>
                   <p className="pb-2 m-0 txt-black">Soluciones completas en sistemas de seguridad</p>
                 </div>
+
                 <div className="serviceItem col-lg-3 py-2 mx-2 mb-3">
                   <img className="pt-2 pb-2" src={control} alt="control de hogar"/>
                   <h4 className="py-2 txt-black">Control de acceso</h4>
                   <p className="pb-2 m-0 txt-black">Restringe el acceso con tecnología de gama</p>
                 </div>
+
                 <div className="serviceItem col-lg-3 py-2 mx-2 mb-3">
-                  <img className="pt-2 pb-3" src={cctv} alt="cctv"/>
+                  <img className="pt-2 pb-3 mt-2" src={cctv} alt="cctv"/>
                   <h4 className="py-2 txt-black">Cctv</h4>
                   <p className="pb-2 m-0 txt-black">Vigila tu casa o negocio desde el celular</p>
                 </div>
+                
                 <div className="serviceItem col-lg-3 py-2 mx-2 mb-3">
                   <img className="pt-2" src={intrusion} alt="intrusion"/>
                   <h4 className="py-2 txt-black">Intrusión</h4>
@@ -184,66 +219,42 @@ export class Home extends Component {
               <div className="row text-uppercase py-3">
 
                 <div className="col-md-4 d-flex justify-content-around p-0 m-0">
-                  <div className="service2Item col-6 px-2">
+                  <div className="service2Item col-6 px-2" onClick={() => this.SetService('Industrial')}>
                     <i className="service2Shape fas fa-industry mb-3"></i>
                     <p className="service2Name txt-black">Industrial</p>
                   </div>
-                  <div className="service2Item col-6 px-2">
+                  <div className="service2Item col-6 px-2" onClick={() => this.SetService('Hotelero')}>
                     <i className="service2Shape fas fa-hotel mb-3"></i>
                     <p className="service2Name txt-black">Hotelero</p>
                   </div>
                 </div>
 
                 <div className="col-md-4 d-flex justify-content-around p-0 m-0">
-                  <div className="service2Item col-6 px-2">
+                  <div className="service2Item col-6 px-2" onClick={() => this.SetService('Empresarial')}>
                     <i className="service2Shape fas fa-building mb-3"></i>
                     <p className="service2Name txt-black">Empresarial</p>
                   </div>
-                  <div className="service2Item col-6 px-2">
+                  <div className="service2Item col-6 px-2" onClick={() => this.SetService('Arquitecto')}>
                     <i className="service2Shape fas fa-hard-hat mb-3"></i>
                     <p className="service2Name txt-black">Arquitecto contratista</p>
                   </div>
                 </div>
 
                 <div className="col-md-4 d-flex justify-content-around p-0 m-0">
-                  <div className="service2Item col-6 px-2">
+                  <div className="service2Item col-6 px-2" onClick={() => this.SetService('Hogar')}>
                     <i className="service2Shape fas fa-home mb-3"></i>
                     <p className="service2Name txt-black">Hogar y condominios</p>
                   </div>
-                  <div className="service2Item col-6 px-2">
+                  <div className="service2Item col-6 px-2" onClick={() => this.SetService('Sanitizacion')}>
                     <i className="service2Shape fas fa-hands-wash mb-3"></i>
-                    <p className="service2Name txt-black">Industrial</p>
+                    <p className="service2Name txt-black">Sanitización e higiene</p>
                   </div>
                 </div>
 
               </div>
             </div>
             <div className="w-100 h-50 sectionPadding1">
-              <div className="services2Container row text-uppercase txt-black">
-
-                <div className="col-lg-12 pb-2">
-                  <h4>Hotelero</h4>
-                </div>
-
-                <div className="col-lg-6 servicesDescription">
-                  <p className="servicePrimary"><i className="fas fa-check"></i>Cctv</p>
-                  <p className="serviceSecundary">Discreción</p>
-                  <p className="serviceSecundary">Equipos resistentes</p>
-                  <p className="serviceSecundary">Tecnología</p>
-                  <p className="servicePrimary"><i className="fas fa-check"></i>Rondineros</p>
-                  <p className="servicePrimary"><i className="fas fa-check"></i>Interruptores de energía</p>
-                </div>
-
-                <div className="col-lg-6 servicesDescription">
-                  <p className="servicePrimary"><i className="fas fa-check"></i>Control de acceso</p>
-                  <p className="serviceSecundary">Chapas inteligentes</p>
-                  <p className="serviceSecundary">Ingreso con pulseras o tarjetas rfid</p>
-                  <p className="servicePrimary"><i className="fas fa-check"></i>Control de tiempo y asistencia</p>
-                  <p className="servicePrimary"><i className="fas fa-check"></i>Tarjeta de entrada</p>
-                  <p className="servicePrimary"><i className="fas fa-check"></i>Cajas fuertes</p>
-                </div>
-
-              </div>
+              <ServicesContainer service={`${this.state.service}`}></ServicesContainer>
             </div>
           </Section>
 
@@ -286,8 +297,8 @@ export class Home extends Component {
               </div>
 
               <div className="step step4 col-md-3 col-sm-6 d-flex flex-column p-3 relative">
-                <div className="stepContainer d-flex align-items-end">
-                  <div className="stepDiv d-flex align-items-center">
+                <div className="stepContainer">
+                  <div className="d-flex align-items-center">
                     <p className="stepNumber pr-2">4</p>
                     <p className="stepName">Mantenimiento y soporte</p>
                   </div>
@@ -310,15 +321,60 @@ export class Home extends Component {
                 <ButtonCustom color="transparent" href="https://api.whatsapp.com/send?phone=529842879394&text=Hola%2C%20deseo%20obtener%20mayor%20informaci%C3%B3n%20de%20Maytech%20Seguridad%20electr%C3%B3nica.">Más información<i className="fas fa-chevron-right ml-3"></i></ButtonCustom>
               </div>
             </div>
-            <div className="aboutBrandDiv sectionPadding1 w-100 pt-5 pb-2">
-              <h4 className="txt-black text-uppercase pb-2">Trabajamos con las mejores marcas</h4>
-              <div className="row">
-                <div className="col d-flex align-items-center justify-content-around">
-                  <img className="brand brand1" src={belden} alt="logo belden"/>
-                  <img className="brand brand2" src={condumex} alt="logo condumex"/>
-                  <img className="brand brand3" src={dks} alt="logo dks"/>
-                  <img className="brand brand4" src={epcom} alt="logo epcom"/>
-                  <img className="brand brand5" src={faac} alt="logo faac"/>
+
+            <div className="aboutBrandDiv sectionPadding1 w-100 d-flex align-items-center flex-column relative">
+              <h4 className="txt-black text-uppercase">Trabajamos con las mejores marcas</h4>
+              <div className="slider">
+                <div className="slide-track">
+
+                  <div className="slide">
+                    <img className="brand" src={belden} alt="logo belden" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={condumex} alt="logo condumex" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={dks} alt="logo dks" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={epcom} alt="logo epcom" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={faac} alt="logo faac" />
+                  </div>
+
+                  <div className="slide">
+                    <img className="brand" src={grandstream} alt="logo grandstream" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={hangua} alt="logo hangua" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={hikvision} alt="logo hikvision" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={honeywell} alt="logo honeywell" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={idis} alt="logo idis" />
+                  </div>
+
+                  <div className="slide">
+                    <img className="brand" src={linkedpro} alt="logo linkedpro" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={samsung} alt="logo samsung" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={tplink} alt="logo tplink" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={ubiquiti} alt="logo ubiquiti" />
+                  </div>
+                  <div className="slide">
+                    <img className="brand" src={zteco} alt="logo zteco" />
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -419,7 +475,7 @@ export class Home extends Component {
 
           <Section image="clientsDiv sectionPadding"> {/* CLIENTS */}
               <h3 className="sectionTittle txt-black text-uppercase">Nuestros clientes maytech</h3>
-              <div className="row d-flex align-items-center py-4">
+              <div className="row d-flex align-items-center py-3">
                 <div className="col-lg-6 px-0">
                   <h4 className="txt-black text-uppercase">Tu mejor aliado en seguridad</h4>
                 </div>
@@ -490,10 +546,10 @@ export class Home extends Component {
                   <img src={logo} alt="logo maytech" className="mb-2"/>
                   <p className="text-white pr-5 mb-3">Venta e instalación de equipos de seguridad, control y automatización con tecnología de vanguardia</p>
                   <div className="rrss">
-                    <i className="fab fa-facebook-f"></i>
-                    <i className="fab fa-whatsapp"></i>
-                    <i className="fab fa-instagram"></i>
-                    <i className="fab fa-linkedin-in"></i>
+                    <a href="https://www.facebook.com/maytechseguridad" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=529842879394&text=Hola%2C%20deseo%20obtener%20mayor%20informaci%C3%B3n%20de%20Maytech%20Seguridad%20electr%C3%B3nica."><i className="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/maytechseguridad/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/maytechplaya/about/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
                   </div>
                 </div>
 
