@@ -66,13 +66,13 @@ export class Home extends Component {
           <Masterhead/>
           <Contact/>
           <Section id="info"> {/* INFO */}
-            <div id="carouselExampleFade" className="bg-light carousel slide carousel-fade w-100 h-50 sectionPadding" data-ride="carousel">
+            <div id="carouselExampleFade" className="bg-light carousel slide carousel-fade w-100 sectionPadding" data-ride="carousel">
               <ol className="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
               </ol>
-              <div className="carousel-inner pt-5 px-5 text-uppercase">
+              <div className="carousel-inner py-5 px-5 text-uppercase">
                 <div className="carousel-item active">
                   <p className="d-block w-100 infoCarousel">El mejor aliado para asegurar tus espacios</p>
                 </div>
@@ -96,25 +96,25 @@ export class Home extends Component {
             <div className="infoDiv w-100 h-50 sectionPadding">
                 <div className="row text-uppercase text-white">
 
-                  <div className="col-lg-3 p-0 infoItem">
+                  <div className="col-3 p-0 infoItem">
                     <div className="infoSvg pb-2"><i className="fas fa-building"></i></div>
                     <h3 className="borderR">146</h3>
-                    <p className="px-5">Espacios seguros</p>
+                    <p className="px-lg-5">Espacios seguros</p>
                   </div>
-                  <div className="col-lg-3 p-0 infoItem">
+                  <div className="col-3 p-0 infoItem">
                     <div className="infoSvg pb-2"><i className="fas fa-shield-alt"></i></div>
                     <h3 className="borderR">791</h3>
-                    <p className="px-5">Sistemas de seguridad instalados</p>
+                    <p className="px-lg-5">Sistemas de seguridad instalados</p>
                   </div>
-                  <div className="col-lg-3 p-0 infoItem">
+                  <div className="col-3 p-0 infoItem">
                     <div className="infoSvg pb-2"><i className="fas fa-shopping-cart"></i></div>
                     <h3 className="borderR">1072</h3>
-                    <p className="px-5">Equipos profesionales vendidos</p>
+                    <p className="px-lg-5">Equipos profesionales vendidos</p>
                   </div>
-                  <div className="col-lg-3 p-0 infoItem">
+                  <div className="col-3 p-0 infoItem">
                     <div className="infoSvg pb-2"><i className="fas fa-wrench"></i></div>
                     <h3 className="">960</h3>
-                    <p className="px-5">Pólizas de mantenimiento</p>
+                    <p className="px-lg-5">Pólizas de mantenimiento</p>
                   </div>
 
                 </div>
@@ -123,8 +123,8 @@ export class Home extends Component {
 
           <Section> {/* THANKS */}
             <div className="thanksDiv w-100 sectionPadding text-white text-uppercase">
-              <h3 className="sectionTittle">Te mantenemos seguro</h3>
-              <p className="sectionDescription w-50">Brindamos alternativas de seguridad tecnológica y soluciones integrales para asegurar tu proyecto con numerosos beneficios de manera profesional</p>
+              <h3 className="sectionTitle">Te mantenemos seguro</h3>
+              <p className="sectionDescription">Brindamos alternativas de seguridad tecnológica y soluciones integrales para asegurar tu proyecto con numerosos beneficios de manera profesional</p>
               <ButtonCustom color="blue-cta" href="https://api.whatsapp.com/send?phone=529842879394&text=Hola%2C%20deseo%20obtener%20mayor%20informaci%C3%B3n%20de%20Maytech%20Seguridad%20electr%C3%B3nica.">Ver más<i className="fas fa-chevron-right ml-3"></i></ButtonCustom>
             </div>
 
@@ -132,7 +132,7 @@ export class Home extends Component {
 
               <div className="row">
 
-                <div className="col-lg-6 px-0 d-flex flex-row align-items-center px-5">
+                <div className="col-lg-6 d-flex flex-row align-items-center px-lg-5">
                   <div className="thanksItem">
                     <i className="fas fa-user-lock text-white"></i>
                   </div>
@@ -172,11 +172,11 @@ export class Home extends Component {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> 
           </Section>
 
           <Section id="services"> {/* SERVICES 1 */}
-            <div className="services1 w-100 h-100 text-center">
+            <div className="services1 w-100 text-center">
               <div className="row sectionPadding text-center d-flex justify-content-center text-uppercase mt-4">
 
                 <div className="serviceItem col-lg-3 py-2 mx-2 mb-3">
@@ -210,12 +210,12 @@ export class Home extends Component {
                 </div>
               </div>
               <ButtonCustom color="blue-cta" href="https://api.whatsapp.com/send?phone=529842879394&text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20asesor%C3%ADa%20personalizada%20sobre%20sus%20sistemas%20de%20seguridad%20electr%C3%B3nica.">Asesoría personalizada<i className="fas fa-chevron-right ml-3"></i></ButtonCustom>
-            </div>
+            </div> 
           </Section>
 
           <Section> {/* SERVICES 2 */}
-            <div className="services2 w-100 h-50 sectionPadding">
-              <h3 className="sectionTittle txt-black text-uppercase">Nuestros servicios</h3>
+            <div className="services2 w-100 sectionPadding">
+              <h3 className="sectionTitle txt-black text-uppercase">Nuestros servicios</h3>
               <div className="row text-uppercase py-3">
 
                 <div className="col-md-4 d-flex justify-content-around p-0 m-0">
@@ -253,18 +253,18 @@ export class Home extends Component {
 
               </div>
             </div>
-            <div className="w-100 h-50 sectionPadding1">
+            <div className="services2Div w-100 sectionPadding1">
               <ServicesContainer service={`${this.state.service}`}></ServicesContainer>
             </div>
           </Section>
 
           <Section className="solutionsDiv"> {/* SOLUTIONS */}
             <div className="solutionsText w-100 sectionPadding text-white text-uppercase">
-              <h3 className="sectionTittle">Soluciones integrales</h3>
-              <p className="sectionDescription w-50">Realizamos plan de seguridad integral, con profesionales capacitados en gestión y desarrollo de proyectos</p>
+              <h3 className="sectionTitle">Soluciones integrales</h3>
+              <p className="sectionDescription">Realizamos plan de seguridad integral, con profesionales capacitados en gestión y desarrollo de proyectos</p>
               <ButtonCustom color="blue-cta" href="https://api.whatsapp.com/send?phone=529842879394&text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20de%20seguridad%20electr%C3%B3nica.">Cotizar mi proyecto<i className="fas fa-chevron-right ml-3"></i></ButtonCustom>
             </div>
-            <div className="row h-100 text-white text-uppercase">
+            <div className="stepsDiv row text-white text-uppercase">
 
               <div className="step step1 col-md-3 col-sm-6 d-flex flex-column p-3 relative">
                 <div className="stepContainer">
@@ -310,14 +310,14 @@ export class Home extends Component {
           </Section>
 
           <Section id="about"> {/* ABOUT */}
-            <div className="aboutDiv w-100 sectionPadding text-white text-uppercase">
-              <h3 className="sectionTittle">Maytech seguridad</h3>
-              <div className="w-50">
+            <div className="aboutDiv sectionPadding text-white text-uppercase">
+              <h3 className="sectionTitle">Maytech seguridad</h3>
+              <div className="aboutDiv1">
                 <p className="sectionDescription">Venta e instalación de equipos de seguridad, control y automatización con tecnología de vanguardia <br/> <br/>
                 Contamos con capital humano, capacitado para generar soluciones eficientes para nuestros clientes
                 </p>
-                <img className="mb-3" src={syscom} alt="logo syscom"/>
-                <ButtonCustom color="blue-cta mr-2">Comprar equipo<i className="fas fa-chevron-right ml-3"></i></ButtonCustom>
+                <img className="logoSyscom mb-3" src={syscom} alt="logo syscom"/><br></br>
+                <ButtonCustom color="blue-cta mb-2 mr-2">Comprar equipo<i className="fas fa-chevron-right ml-3"></i></ButtonCustom>
                 <ButtonCustom color="transparent" href="https://api.whatsapp.com/send?phone=529842879394&text=Hola%2C%20deseo%20obtener%20mayor%20informaci%C3%B3n%20de%20Maytech%20Seguridad%20electr%C3%B3nica.">Más información<i className="fas fa-chevron-right ml-3"></i></ButtonCustom>
               </div>
             </div>
@@ -377,15 +377,15 @@ export class Home extends Component {
 
                 </div>
               </div>
-            </div>
+            </div> 
           </Section>
 
           <Section id="contact" image="contactDiv sectionPadding2"> {/* CONTACT */}
-              <h3 className="sectionTittle text-white text-uppercase">Contacto e información</h3>
-              <p className="sectionDescription text-white text-uppercase w-50 pr-5">Disfrute de todos los beneficios al trabajar con nosotros, el mejor aliado para tu seguridad</p>
+              <h3 className="sectionTitle text-white text-uppercase">Contacto e información</h3>
+              <p className="sectionDescription text-white text-uppercase pr-5">Disfrute de todos los beneficios al trabajar con nosotros, el mejor aliado para tu seguridad</p>
                 <div  className="row contactContainer d-flex justify-content-between">
 
-                  <div className="col-md-6 checkListContainer text-white p-0">
+                  <div className="checkListContainer col-md-6 text-white p-0">
 
                     <div className="d-flex align-items-center checkList py-4">
                       <i className="checkItem fas fa-check"></i>
@@ -426,7 +426,7 @@ export class Home extends Component {
 
                   <div className="col-md-6 formContainer">
                     
-                    <form className="text-white pt-3 pb-5 px-4">
+                    <form className="text-white pt-3 pb-5 px-lg-4">
 
                       <div className="form-row text-uppercase">
                         <div className="form-group col-md-6 mb-0">
@@ -474,8 +474,8 @@ export class Home extends Component {
           </Section>
 
           <Section image="clientsDiv sectionPadding"> {/* CLIENTS */}
-              <h3 className="sectionTittle txt-black text-uppercase">Nuestros clientes maytech</h3>
-              <div className="row d-flex align-items-center py-3">
+              <h3 className="sectionTitle txt-black text-uppercase">Nuestros clientes maytech</h3>
+              <div className="row d-flex align-items-center py-lg-3">
                 <div className="col-lg-6 px-0">
                   <h4 className="txt-black text-uppercase">Tu mejor aliado en seguridad</h4>
                 </div>
@@ -502,7 +502,7 @@ export class Home extends Component {
                     <img className="client client9" src={clandestino} alt="logo clandestino"/>
                     <img className="client client10" src={bbcondos} alt="logo bb condos"/>
                   </div>
-                  <div className="col d-flex align-items-center justify-content-center">
+                  <div className="col mb-sm-3 d-flex align-items-center justify-content-center">
                     <img className="client client11" src={plank} alt="logo plank"/>
                   </div>
                 </div>
@@ -510,11 +510,11 @@ export class Home extends Component {
           </Section>
 
           <Section id="blog"> {/* BOTTON */}
-            <div className="blogDiv w-100 h-50 sectionPadding">
-              <h3 className="sectionTittle text-white text-uppercase">Mantente actualizado</h3>
-              <div className="d-flex justify-content-between">
+            <div className="blogDiv w-100 sectionPadding">
+              <h3 className="sectionTitle text-white text-uppercase">Mantente actualizado</h3>
+              <div className="d-flex flex-column flex-lg-row justify-content-between">
 
-                <div className="col-lg-6 blogItem mr-2 py-2 px-4 d-flex flex-column justify-content-between bg-light">
+                <div className="blogItem col-lg-6 d-flex flex-column justify-content-between bg-light mr-2 py-2 px-4">
                   <div>
                     <h5 className="text-uppercase">7 herramientas básicas para todo técnico en cctv, control de acceso y alarmas</h5>
                     <p className="m-0">10 octubre, 2020</p>
@@ -525,7 +525,7 @@ export class Home extends Component {
                   </div>
                 </div>
 
-                <div className="col-lg-6 blogItem ml-2 py-2 px-4 d-flex flex-column justify-content-between bg-light">
+                <div className="blogItem col-lg-6 d-flex flex-column justify-content-between bg-light ml-lg-2 py-2 px-4">
                   <div>
                     <h5 className="text-uppercase">Organiza tu plan de acción</h5>
                     <p className="m-0">19 junio, 2020</p>
@@ -534,15 +534,14 @@ export class Home extends Component {
                     <p className="my-2 font-weight-bolder">Leer más</p>
                     <i className="fas fa-chevron-right mx-2"></i>
                   </div>
-                  
                 </div>
                 
               </div>
             </div>
 
-            <div className="footerDiv row d-flex align-items-start w-100 h-50 sectionPadding1">
+            <div className="footerDiv row d-flex align-items-start w-100 sectionPadding1 mb-2">
                 
-                <div className="col-lg-4 pl-0 pt-4">
+                <div className="col-md-4 pl-lg-0 pt-4">
                   <img src={logo} alt="logo maytech" className="mb-2"/>
                   <p className="text-white pr-5 mb-3">Venta e instalación de equipos de seguridad, control y automatización con tecnología de vanguardia</p>
                   <div className="rrss">
@@ -553,28 +552,29 @@ export class Home extends Component {
                   </div>
                 </div>
 
-                <div className="col-lg-4 pt-4">
+                <div className="col-md-4 pt-4">
                   <h5 className="footerTittle text-white text-uppercase">Contáctanos</h5>
-                  <div className="footerLine mb-4"></div>
+                  <div className="footerLine mb-2 mb-lg-4"></div>
                   <p className="text-white">Playa del Carmen, México<br/><br/>
                     teléfono : <span className="font-weight-bold">+(521) 984 287 9394</span><br/>
                     email : <span className="font-weight-bold">info@maytechseguridad.com</span>
                   </p>
                 </div>
 
-                <div className="col-lg-4 pr-0 pt-4">
+                <div className="col-md-4 pr-lg-0 pt-2 pt-lg-4 pb-sm-3">
                   <h5 className="footerTittle text-white text-uppercase">Suscríbete</h5>
-                  <div className="footerLine mb-4"></div>
+                  <div className="footerLine mb-2 mb-lg-4"></div>
                   <p className="text-white pr-5">Suscríbete y recibe increíbles descuentos</p>
                   <form>
                     <input className="mb-3 px-2" placeholder="Déjanos tu correo electrónico"></input><br/>
-                    <button type="submit" className="text-uppercase">Enviar<i className="fas fa-chevron-right ml-3"></i></button>
+                    <button type="submit" className="text-uppercase mb-3">Enviar<i className="fas fa-chevron-right ml-3"></i></button>
                   </form>
                 </div>
 
-                <div className="col m-0 copyDiv p-0">
-                  <p className="font-weight-light text-white copyright">
-                  <span className="font-weight-bold">Maytech Seguridad © 2021</span> | Todos los derechos reservados</p>
+                <div className="copyDiv col m-0 p-0">
+                  <p className="copyright font-weight-light text-white">
+                  <span className="font-weight-bold">Maytech Seguridad © 2021</span> | Todos los derechos reservados
+                  </p>
                 </div>
             </div>
           </Section>
