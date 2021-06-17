@@ -1,11 +1,11 @@
 :root {
-    --blue: #528DE5;
+    --blue-cta: #528DE5;
 }
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    max-width: 1500px;
     margin: 0;
+    max-width: 1500px;
     padding: 0;
 }
 
@@ -19,32 +19,32 @@ section{
 }
 
 .navbar-dark{
-    background: linear-gradient(180deg, rgba(89, 89, 89, 0.3) 0%, rgba(89, 89, 89, 0.08) 68.97%, rgba(89, 89, 89, 0) 100%);
+    background: linear-gradient(180deg, rgba(89, 89, 89, .3) 0, rgba(89, 89, 89, .08) 68.97%, rgba(89, 89, 89, 0) 100%);
 }
 
 #mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     background-color: #212529;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 #mainNav .navbar-toggler {
-    padding: 0.75rem;
-    font-size: 0.75rem;
-    text-transform: uppercase;
+    font-size: .75rem;
     font-weight: 700;
+    padding: .75rem;
+    text-transform: uppercase;
 }
 
 #mainNav .navbar-nav:first-of-type{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.95rem;
     color: #fff;
+    font-size: .95rem;
+    letter-spacing: .0625em;
     opacity: .8;
-    letter-spacing: 0.0625em;
-    transition: 0.2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -57,7 +57,7 @@ section{
         padding-bottom: 1.5rem;
         border: none;
         background-color: transparent;
-        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        transition: padding-top .3s ease-in-out, padding-bottom .3s ease-in-out;
     }
     #mainNav .navbar-nav .nav-item {
         margin-right: 1rem;
@@ -68,8 +68,6 @@ section{
 }
 
 header.masthead {
-padding: 7rem 7rem 6rem;
-text-align: center;
 color: #fff;
 background-image: url("./assets/img/Home.png");
 background-repeat: no-repeat;
@@ -77,9 +75,11 @@ background-attachment: scroll;
 background-position: center center;
 background-size: cover;
 height: 100vh;
+padding: 7rem 7rem 6rem;
+text-align: center;
 }
 header.masthead .masthead-subheading {
-font-size: 0.6rem;
+font-size: .6rem;
 line-height: 1rem;
 margin-bottom: 5px;
 }
@@ -87,7 +87,7 @@ header.masthead .masthead-heading {
 font-size: 3.25rem;
 font-weight: 700;
 line-height: 3.25rem;
-letter-spacing: 0.1em;
+letter-spacing: .1em;
 margin-bottom: 1rem;
 }
 header img{
@@ -102,24 +102,24 @@ header div.container{
         padding: 8rem 15rem 12.5rem;
     }
     header.masthead .masthead-subheading {
-        font-size: 0.8rem;
+        font-size: .8rem;
+        font-weight: 700;
         line-height: 1rem;
-        font-weight: bold;
-        margin-bottom: 0.1rem;
+        margin-bottom: .1rem;
     }
     header.masthead .masthead-heading {
         font-size: 3rem;
         font-weight: 400;
         line-height: 3rem;
-        letter-spacing: 0.05em;
+        letter-spacing: .05em;
         margin-bottom: 3rem;
     }
 }
 
 header img.arrowDown{
-    width: 2rem;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: .5s ease-in-out;
+    width: 2rem;
 }
 
 header img.arrowDown:hover{
@@ -127,31 +127,31 @@ header img.arrowDown:hover{
 }
 
 .flagContainer{
-    margin-top: 0.6rem;
+    margin-top: .6rem;
 }
 
 .flagContainer p{
-    margin-top: 0.1rem;
+    margin-top: .1rem;
 }
 
 .flagDiv{
-    color: white;
+    color: #fff;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
-    opacity: .8;
     filter: saturate(0);
+    opacity: .8;
+    transition: .2s ease-in-out;
 }
 
 .flag{
-    width: 20px;
     height: 20px;
+    width: 20px;
 }
 
 .flagDiv:hover, .flag2{
-    text-decoration: none;
-    color: white;
-    opacity: 1;
+    color: #fff;
     filter: saturate(1);
+    opacity: 1;
+    text-decoration: none;
 }
 
 .paddingXaxis{
@@ -159,33 +159,33 @@ header img.arrowDown:hover{
 }
 
 .btn-contact{
-    border:1px solid white;
-    transition: 0.2s ease-in-out;
+    border:1px solid #fff;
+    transition: .2s ease-in-out;
 }
 
 .btn-contact:hover{
-    color: white;
-    background-color: rgba(255, 255, 255, 0.404) !important;
-    border:1px solid white;
+    background-color: rgba(255, 255, 255, .404) !important;
+    border:1px solid #fff;
+    color: #fff;
 }
 
 .divisionLine{
-    width: 50px;
-    height: 3px;
     background: #0C2029;
+    height: 3px;
+    width: 50px;
 }
 
-.tittleHighlighted{
-    background-color: white;
+.titleHighlighted{
+    background-color: #fff;
     color: #0C2029;
+    display: inline-block;
     font-weight: 700;
     height: 48px;
-    letter-spacing: 0.15em;
-    display: inline-block;
+    letter-spacing: .15em;
 }
 
 header div.container{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
 }
 
 .sectionPadding{
@@ -200,57 +200,64 @@ header div.container{
     padding: 5rem 15rem 0;
 }
 
-.sectionTitle{
+.fjalla{
     font-family: 'Fjalla One', sans-serif !important;
+}
+
+.sectionTitle{
     font-size: 3rem;
-    letter-spacing: 0.03em;
+    letter-spacing: .03em;
+}
+
+.sectionSubtitle{
+    font-size: 1.5rem;
+    letter-spacing: .1em;
 }
 
 .sectionDescription{
-    font-style: normal;
-    font-weight: bold;
-    font-size: 0.87rem;
+    font-weight: 700;
+    font-size: .87rem;
+    letter-spacing: .1em;
     line-height: 1.1rem;
-    letter-spacing: 0.1em;
     width: 50%;
 }
 
 .txt-black{
     color: #313131;
-    opacity: 0.6;
+    opacity: .6;
 }
 .btn-blue-cta{
-    background: var(--blue);
+    background: var(--blue-cta);
     border-radius: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: .03em;
     line-height: 1.1rem;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     padding: .5rem 1.2rem;
-    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
 }
 .btn-blue-cta:hover{
-    background: white;
-    box-shadow: 0px 8px 23px -1px #999999;
+    background: #fff;
+    box-shadow: 0 8px 23px -1px #999;
 }
 .btn-transparent{
     background: transparent;
-    border: 1px solid white;
+    border: 1px solid #fff;
     border-radius: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: .8rem;
     line-height: 1.1rem;
-    letter-spacing: 0.03em;
+    letter-spacing: .03em;
     text-transform: uppercase;
     padding: .5rem 1.2rem;
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .btn-transparent:hover{
-    background: white;
-    box-shadow: 0px 8px 23px -1px #999999;
+    background: #fff;
+    box-shadow: 0 8px 23px -1px #999;
 }
 
 /* INFO */
@@ -271,11 +278,10 @@ header div.container{
     background-color: #C4C4C4;
 }
 .infoCarousel{
-    font-family: 'Fjalla One', sans-serif;
     font-size: 3rem;
     text-align: center;
     line-height: 3rem;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
 }
 .carouselArrow{
     color: #1D416E;
@@ -285,19 +291,17 @@ header div.container{
     text-align: center;
 }
 .infoDiv h3{
-    font-weight: bold;
     font-size: 3rem;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     margin-bottom: 1rem;
 }
-.infoDiv h3.borderR{
-    border-right: 2px solid white;
+.borderR{
+    border-right: 2px solid #fff;
 }
 .infoDiv p{
-    font-weight: bold;
     font-size: 1rem;
     line-height: 20px;
-    letter-spacing: 0.08em;
+    letter-spacing: .08em;
 }
 .infoItem{
     opacity: .7;
@@ -308,7 +312,7 @@ header div.container{
 }
 .infoItem i{
     font-size: 2rem;
-    border: 1px solid white;
+    border: 1px solid #fff;
     border-radius: 100%;
     padding: 1rem;
 }
@@ -335,29 +339,20 @@ header div.container{
     padding: 2rem 1.5rem;
 }
 .thanksItem2 p{
-    font-weight: bold;
     font-size: .8rem;
     line-height: 18px;
-    letter-spacing: 0.1em;
-}
-.thanksDescriptionDiv h4{
-    font-family: 'Fjalla One', sans-serif !important;
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
 }
 .thanksDescriptionDiv ul{
     list-style: none; 
-    font-weight: normal;
+    font-weight: 400;
     font-size: .8rem;
     line-height: 18px;
-    letter-spacing: 0.1em;
-}
-.thanksDescriptionDiv ul p.descriptionTitle{
-    font-weight: bold;
+    letter-spacing: .1em;
 }
 .thanksDescriptionDiv ul i{
     font-size: .5rem;
-    color: var(--blue);
+    color: var(--blue-cta);
 }
 
 /* SERVICES 1*/
@@ -370,25 +365,25 @@ header div.container{
 .serviceItem{
     background-color: transparent;
     border-radius: 15px;
-    box-shadow: 0px 8px 10px 2px rgba(0, 0, 0, 0);
-    transition: 0.7s ease-in-out all;
+    box-shadow: 0 8px 10px 2px rgba(0, 0, 0, 0);
+    transition: .7s ease-in-out all;
 }
 .serviceItem:hover{
-    background-color: white;
+    background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0px 8px 10px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 10px 2px rgba(0, 0, 0, .15);
 }
 .serviceItem h4{
     font-weight: bolder;
     font-size: 1rem;
     line-height: 1.4rem;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
 }
 .serviceItem p{
     font-weight: 700;
-    font-size: 0.7rem;
+    font-size: .7rem;
     line-height: 1.1rem;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
 }
 
 /* SERVICES 2*/
@@ -402,42 +397,37 @@ header div.container{
 }
 .services2 p{
     font-weight: bolder;
-    font-size: 0.8rem;
+    font-size: .8rem;
     line-height: 1.1rem;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
 }
 .services2 i{
     color: #2e4c6b;
     font-size: 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     border-radius: 50px;
     padding: 1rem;
 }
 .services2 div.service2Item {
     text-align: center;
-    opacity: 0.6;
-    transition: 0.3s ease-in-out all;
+    opacity: .6;
+    transition: .3s ease-in-out all;
 }
 .services2 div.service2Item:hover {
     opacity: 1;
 }
-.services2Container h4{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
-}
 .servicesDescription p{
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
+    font-size: .8rem;
+    letter-spacing: .1em;
     margin-bottom: 0;
     padding: .3rem 0;
 }
 .servicesDescription i{
-    color:var(--blue);
+    color:var(--blue-cta);
     padding-right: 5px;
 }
 .servicePrimary{
-    font-weight: bold;
+    font-weight: 700;
 }
 .serviceSecondary{
     margin-left: 19px;
@@ -464,7 +454,7 @@ header div.container{
 }
 .step1{
     background: 
-        linear-gradient(180deg, rgba(168, 168, 168, 0.85) 0%, rgba(168, 168, 168, 0.425) 100%),
+        linear-gradient(180deg, rgba(168, 168, 168, .85) 0%, rgba(168, 168, 168, .425) 100%),
         url("./assets/img/Paso1.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -474,7 +464,7 @@ header div.container{
 }
 .step1:hover{
     background: 
-        linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, 0.3) 100%),
+        linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, .3) 100%),
         url("./assets/img/Paso1.jpg");
     background-position-x: center;
     background-size: 130%;
@@ -482,7 +472,7 @@ header div.container{
 }
 .step2{
     background: 
-        linear-gradient(180deg, rgba(168, 168, 168, 0.85) 0%, rgba(168, 168, 168, 0.425) 100%),
+        linear-gradient(180deg, rgba(168, 168, 168, .85) 0%, rgba(168, 168, 168, .425) 100%),
         url("./assets/img/Paso2.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -492,14 +482,14 @@ header div.container{
 }
 .step2:hover{
     background: 
-        linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, 0.3) 100%),
+        linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, .3) 100%),
         url("./assets/img/Paso2.jpg");
     background-position-x: center;
     background-size: 130%;
 }
 .step3{
     background: 
-        linear-gradient(180deg, rgba(168, 168, 168, 0.85) 0%, rgba(168, 168, 168, 0.425) 100%),
+        linear-gradient(180deg, rgba(168, 168, 168, .85) 0%, rgba(168, 168, 168, .425) 100%),
         url("./assets/img/Paso3.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -509,14 +499,14 @@ header div.container{
 }
 .step3:hover{
     background: 
-        linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, 0.3) 100%),
+        linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, .3) 100%),
         url("./assets/img/Paso3.jpg");
     background-position-x: center;
     background-size: 130%;
 }
 .step4{
     background: 
-        linear-gradient(180deg, rgba(168, 168, 168, 0.85) 0%, rgba(168, 168, 168, 0.425) 100%),
+        linear-gradient(180deg, rgba(168, 168, 168, .85) 0%, rgba(168, 168, 168, .425) 100%),
         url("./assets/img/Paso4.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -526,29 +516,26 @@ header div.container{
 }
 .step4:hover{
     background: 
-        linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, 0.3) 100%),
+        linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, .3) 100%),
         url("./assets/img/Paso4.jpg");
     background-position-x: center;
     background-size: 130%;
 }
 .stepNumber{
     font-size: 4rem;
-    font-family: 'Fjalla One', sans-serif !important;
 }
 .stepName{
     font-size: 1.3rem;
     line-height: 1.7rem;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     width: 150px;
-    font-family: 'Fjalla One', sans-serif !important;
 }
 .stepDescription{
-    display: absolute;
-    position: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
+    position: relative;
+    bottom: 0;
+    font-size: .8rem;
     line-height: 1.1rem;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     width: 70%;
     display: none;
 }
@@ -564,7 +551,7 @@ header div.container{
 
 .aboutDiv{
     background:
-        linear-gradient(1.71deg, rgba(10, 29, 36, 0.7) 1.07%, rgba(255, 255, 255, 0) 98.19%),
+        linear-gradient(1.71deg, rgba(10, 29, 36, .7) 1.07%, rgba(255, 255, 255, 0) 98.19%),
         url("./assets/img/About.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -611,7 +598,7 @@ header div.container{
     width: 100%;
 }
 .slider::before, .slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 80px;
     position: absolute;
@@ -647,9 +634,6 @@ header div.container{
 /* BRAND CAROUSEL END */
 
 .aboutBrandDiv h4{
-    font-family: 'Fjalla One', sans-serif !important;
-    font-size: 1.5rem;
-    letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -657,7 +641,7 @@ header div.container{
 /* CONTACT */
 .contactDiv{
     background: 
-        linear-gradient(0.04deg, #0A1D24 0.2%, rgba(196, 196, 196, 0) 99.57%),
+        linear-gradient(.04deg, #0A1D24 .2%, rgba(196, 196, 196, 0) 99.57%),
         url("./assets/img/Contacto.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -679,10 +663,9 @@ header div.container{
     margin: .2rem 3rem 0;
 }
 .formContainer label{
-    font-weight: bold;
-    font-size: 0.8rem;
+    font-size: .8rem;
     line-height: 1.1rem;
-    letter-spacing: 0.2em;
+    letter-spacing: .2em;
 }
 .formContainer input:focus{
     outline: none;
@@ -692,82 +675,69 @@ header div.container{
 }
 .formContainer div.formDirection p{
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: .8rem;
     line-height: .8rem;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
 }
 .btn-enviar{
     background: #2E496B;
     border-radius: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: .8rem;
     line-height: 1.1rem;
     text-align: center;
-    letter-spacing: 0.2em;
+    letter-spacing: .2em;
     text-transform: uppercase;
     width: 100%;
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .btn-enviar:hover{
-    background: white;
+    background: #fff;
 }
 .checkList i{
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.548);
+    color: rgba(255, 255, 255, .548);
     font-size: .7rem;
     padding: .3rem;
     margin-right: 1.5rem;
     border-radius: 50px;
-    border:2px solid var(--blue);
-    transition: all 0.3s ease-in-out;
+    border:2px solid var(--blue-cta);
+    transition: all .3s ease-in-out;
 }
 .checkList{
     opacity: .5;
     max-width: 300px;
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .checkList:hover{
     opacity: 1;
 }
 .checkList:hover i{
     background-color: #528DE5;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 .checkDescription h4, p{
-    font-size: 0.8rem;
+    font-size: .8rem;
     line-height: 1.1rem;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
 }
-.checkDescription h4{
-    font-weight: bold;
-}
+
 .checkListLine {
 	position: absolute;
-	height: 4px;
-	background-color: whitesmoke;
-	top: 62px;
+	background-color: #fff;
 	width: 2px;
     height: 49.5px;
 	left: 12px;
+}
+.checkListLine0 {
+	top: 62px;
 }
 .checkListLine1 {
-	position: absolute;
-	height: 4px;
-	background-color: whitesmoke;
 	top: 137px;
-	width: 2px;
-    height: 49.5px;
-	left: 12px;
 }
 .checkListLine2 {
-	position: absolute;
-	height: 4px;
-	background-color: whitesmoke;
 	top: 212px;
-	width: 2px;
-    height: 49.5px;
-	left: 12px;
 }
 
 /* CLIENTS */
@@ -779,15 +749,9 @@ header div.container{
     background-position-y: center;
     background-size: 60%;
 }
-.clientsDiv h4{
-    font-family: 'Fjalla One', sans-serif !important;
-    font-size: 1.5rem;
-    letter-spacing: 0.03em;
-}
 .clientsDiv ul{
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    font-weight: bold;
+    font-size: .8rem;
+    letter-spacing: .1em;
 }
 .clientsDiv li{
     padding: .5rem 2rem;
@@ -795,7 +759,7 @@ header div.container{
     transition: .5s ease-in-out all;
 }
 .clientsDiv li:hover{
-    background-color: rgba(82, 141, 229, 0.8);
+    background-color: rgba(82, 141, 229, .8);
 }
 .clientsDiv img.client{
     filter: saturate(0);
@@ -816,7 +780,7 @@ header div.container{
 /* BLOG */
 .blogDiv{
     background: 
-        linear-gradient(180deg, rgba(46, 73, 107, 0.5) 0%, rgba(46, 73, 107, 0) 100%),
+        linear-gradient(180deg, rgba(46, 73, 107, .5) 0%, rgba(46, 73, 107, 0) 100%),
         url("./assets/img/Blog.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -826,16 +790,14 @@ header div.container{
     height: 50%;
 }
 .blogDiv h5{
-    font-family: 'Fjalla One', sans-serif !important;
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 1.1rem;
     line-height: 23px;
-    letter-spacing: 0.03em;
+    letter-spacing: .03em;
     margin-bottom: 0;
 }
 .blogDiv p{
-    font-size: 0.8rem;
+    font-size: .8rem;
 }
 .blogPost{
     width: 200px;
@@ -846,7 +808,7 @@ header div.container{
 }
 .blogItem:hover{
     cursor: pointer;
-    background-color: rgb(235, 235, 235) !important;
+    background-color: #ebebeb !important;
 }
 .readMore{
     color: #2E496B;
@@ -856,8 +818,8 @@ header div.container{
     color: #487ab385;
 }
 .readMore i{
-    font-size: 0.6rem;
-    margin-top: 0.1rem;
+    font-size: .6rem;
+    margin-top: .1rem;
 }
 
 /* FOOTER */
@@ -877,20 +839,19 @@ header div.container{
     margin-bottom: 0;
 }
 .copyright{
-    background-color: rgba(82, 141, 229, 0.8);
+    background-color: rgba(82, 141, 229, .8);
     text-align: center;
-    letter-spacing: 0.2rem;
-    font-size: 0.8rem;
+    letter-spacing: .2rem;
+    font-size: .8rem;
     padding: 1rem 0;
     margin: 0;
     width: 100%;
 }
 .footerTittle{
-    font-family: 'Fjalla One', sans-serif !important;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 23px;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     margin-bottom: 4px;
 }
 .footerLine{
@@ -900,14 +861,14 @@ header div.container{
 }
 .footerDiv div.rrss i{
     color: #0A1D24;
-    background-color: white;
+    background-color: #fff;
     padding: 6px;
     margin: 0 10px 0 0;
     border-radius: 20px;
     cursor: pointer;
 }
 .footerDiv div.rrss i:hover{
-    background-color: rgba(255, 255, 255, 0.384);
+    background-color: rgba(255, 255, 255, .384);
 }
 .fa-facebook-f{
     padding: 5px 8px !important;
@@ -916,45 +877,45 @@ header div.container{
     width: 28%;
 }
 .footerDiv p {
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
+    font-size: .8rem;
+    letter-spacing: .1em;
     font-weight: lighter;
     line-height: 1.1rem;
 }
 .footerDiv input{
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #fff;
     border-radius: 20px;
     transition: .5s ease-in-out;
 }
 .footerDiv input:hover{
-    background-color: white;
+    background-color: #fff;
 }
 .footerDiv input:focus{
     outline: none;
-    background-color: white;
-    border: 1px solid rgba(82, 141, 229, 0.8);
+    background-color: #fff;
+    border: 1px solid rgba(82, 141, 229, .8);
 }
 .footerDiv input::placeholder {
-    color: white;
-    opacity: 0.6; 
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
+    color: #fff;
+    opacity: .6; 
+    font-size: .7rem;
+    letter-spacing: .1em;
 }
 .footerDiv button{
-    background-color: white;
-    border: 1px solid white;
+    background-color: #fff;
+    border: 1px solid #fff;
     border-radius: 20px;
-    font-size: 0.7rem;
+    font-size: .7rem;
     font-weight: 600;
-    letter-spacing: 0.03em;
-    padding: 0.3rem .5rem;
-    transition: 0.5s ease-in-out;
+    letter-spacing: .03em;
+    padding: .3rem .5rem;
+    transition: .5s ease-in-out;
 }
 .footerDiv button:hover{
-    background-color: rgba(82, 141, 229, 0.8);
-    border: 1px solid rgba(82, 141, 229, 0.8);
-    color: white;
+    background-color: rgba(82, 141, 229, .8);
+    border: 1px solid rgba(82, 141, 229, .8);
+    color: #fff;
 }
 
 /* WHATSAPP FACEBOOK MESSENGER Y MAIL*/
@@ -964,7 +925,7 @@ header div.container{
     width: 60px;
     height: 60px;
     bottom: 10.5%;
-    right: 2.2%;
+    right: 2.4%;
     border-radius: 50px;
     z-index: 100;
 }
@@ -990,7 +951,7 @@ header div.container{
     filter:blur(1px);
     opacity:.5;
     transform: scale(.98);
-    transition: 0.5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 .contactItemsContainer:hover .my-float:hover{
     transform:scale(1);
@@ -1022,9 +983,9 @@ header div.container{
         font-size: 1.5rem;
     }
     .sectionDescription{
-        font-size: 0.8rem;
+        font-size: .8rem;
         line-height: 1.1rem;
-        letter-spacing: 0.1em;
+        letter-spacing: .1em;
         width: 100%;
     }
 
@@ -1033,7 +994,7 @@ header div.container{
         padding-bottom: 1.5rem;
         border: none;
         background-color: transparent;
-        transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+        transition: padding-top .3s ease-in-out, padding-bottom .3s ease-in-out;
     }
 
     /*MASTERHEAD*/
@@ -1045,17 +1006,20 @@ header div.container{
         padding: 15rem 2rem 12.5rem;
     }
     header.masthead .masthead-subheading {
-        font-size: 0.6rem;
+        font-size: .6rem;
     }
     header.masthead .masthead-heading {
         font-size: 1.3rem;
         font-weight: 400;
         line-height: 2rem;
-        letter-spacing: 0.03em;
-        margin-bottom: 3rem;
+        letter-spacing: .03em;
+        margin-bottom: 1.5rem;
     }
     header img{
         width: 70%;
+    }
+    .titleHighlighted{
+        height: 32px;
     }
 
     /* INFO */
@@ -1085,23 +1049,6 @@ header div.container{
         opacity: 1;
     }
 
-    /* SERVICES 1*/
-
-    .services1{
-        clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0% 5%);
-        height: auto;
-    }
-    .serviceItem img{
-        width: 20%;
-    }
-    .serviceItem h4{
-        margin: 0;
-    }
-    .serviceItem p{
-        font-size: 0.6rem;
-
-    }
-
     /* TRANKS */
 
     .thanksDiv{
@@ -1119,9 +1066,28 @@ header div.container{
     .thanksDescriptionDiv h4{
         font-size: 1.1rem;
     }
+    .thanksDescriptionDiv p{
+        font-size: .6rem;
+    }
     .thanksDescriptionDiv ul{
         font-size: .6rem;
         padding-left: 0;
+    }
+
+    /* SERVICES 1*/
+
+    .services1{
+        clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0% 5%);
+        height: auto;
+    }
+    .serviceItem img{
+        width: 20%;
+    }
+    .serviceItem h4{
+        margin: 0;
+    }
+    .serviceItem p{
+        font-size: .6rem;
     }
 
     /* SERVICES 2*/
@@ -1139,7 +1105,7 @@ header div.container{
         height: auto;
     }
     .servicesDescription p{
-        font-size: 0.5rem;
+        font-size: .5rem;
         padding: .1rem 0;
     }
 
@@ -1176,7 +1142,6 @@ header div.container{
     }
     .stepNumber{
         font-size: 3rem;
-        font-family: 'Fjalla One', sans-serif !important;
     }
     .stepName{
         font-size: 1.1rem;
@@ -1191,6 +1156,37 @@ header div.container{
     .stepContainer{
         display: flex;
         flex-direction: row;
+    }
+    .step1:hover{
+        background: 
+        linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, .3) 100%),
+        url("./assets/img/Paso1.jpg");
+        background-size: cover;
+        height: 40%;
+    }
+    .step2:hover{
+        background: 
+            linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, .3) 100%),
+            url("./assets/img/Paso2.jpg");
+            background-position-y: center;
+            background-size: cover;
+            height: 20%;
+    }
+    .step3:hover{
+        background: 
+            linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, .3) 100%),
+            url("./assets/img/Paso3.jpg");
+            background-position-y: 78%;
+            background-size: cover;
+            height: 20%;
+    }
+    .step4:hover{
+        background: 
+            linear-gradient(180deg, #2E496B 7.16%, rgba(30, 30, 30, .3) 100%),
+            url("./assets/img/Paso4.jpg");
+        background-position-y: 8%;
+        background-size: cover;
+        height: 20%;
     }
 
     /* ABOUT */
@@ -1238,7 +1234,7 @@ header div.container{
         font-size: 1.1rem;
     }
     .clientsDiv ul{
-        font-size: 0.6rem;
+        font-size: .6rem;
     }
     .clientsDiv li{
         padding: 0;
@@ -1264,8 +1260,8 @@ header div.container{
     }
     .copyright{
         background: red;
-        letter-spacing: 0.08rem;
-        font-size: 0.5rem;
+        letter-spacing: .08rem;
+        font-size: .5rem;
         padding: 1rem 0;
         width: 100%;
     }
@@ -1278,12 +1274,12 @@ header div.container{
     }
     .footerDiv input{
         width: 100%;
-        padding: 0.3rem .5rem;
+        padding: .3rem .5rem;
         text-align: center;
     }
     .footerDiv button{
         width: 100%;
-        padding: 0.5rem;
+        padding: .5rem;
     }
 
     /* WHATSAPP FACEBOOK MESSENGER Y MAIL*/
@@ -1308,32 +1304,13 @@ header div.container{
 
 }
   
-
-
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
+ @media only screen and (min-width: 768px) {
     .copyright {
         background: blue;
     }
 
-    .stepName{
-        display: none;
-    }
-
-    section{
-        height: auto;
-    }
-
-
-
-    /* WHATSAPP FACEBOOK MESSENGER Y MAIL*/
-    /* .whats-app {
-        bottom: 6%;
-    }
-    .messengerIcon {
-        bottom: 10%;
-    }
-}  */ 
+}  
 
 /* Large devices (laptops/desktops, 992px and up) */
 /* @media only screen and (min-width: 992px) {

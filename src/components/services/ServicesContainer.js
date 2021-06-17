@@ -7,9 +7,9 @@ export class ServicesContainer extends React.Component{
 
     static renderHotelero(){
       return(
-        <div className="services2Container row text-uppercase animate__animated animate__fadeIn">
+        <div className="services2Container row text-uppercase">
           <div className="col-lg-12 pb-2">
-            <h4>Hotelero</h4>
+            <h4 className="fjalla">Hotelero</h4>
           </div>
           <ServiceDescription>
             <ServiceType type="Primary">
@@ -51,7 +51,7 @@ export class ServicesContainer extends React.Component{
       return(
         <div className="services2Container row text-uppercase">
           <div className="col-lg-12 pb-2">
-            <h4>Industrial</h4>
+            <h4 className="fjalla">Industrial</h4>
           </div>
           <ServiceDescription>
             <ServiceType type="Primary">
@@ -83,7 +83,7 @@ export class ServicesContainer extends React.Component{
       return(
         <div className="services2Container row text-uppercase">
           <div className="col-lg-12 pb-2">
-            <h4>Empresarial</h4>
+            <h4 className="fjalla">Empresarial</h4>
           </div>
           <ServiceDescription>
             <ServiceType type="Primary">
@@ -119,7 +119,7 @@ export class ServicesContainer extends React.Component{
       return(
         <div className="services2Container row text-uppercase">
           <div className="col-lg-12 pb-2">
-            <h4>Arquitecto contratista</h4>
+            <h4 className="fjalla">Arquitecto contratista</h4>
           </div>
           <ServiceDescription>
             <ServiceType type="Primary">
@@ -136,7 +136,7 @@ export class ServicesContainer extends React.Component{
       return(
         <div className="services2Container row text-uppercase">
           <div className="col-lg-12 pb-2">
-            <h4>Hogar y condominios</h4>
+            <h4 className="fjalla">Hogar y condominios</h4>
           </div>
           <ServiceDescription>
             <ServiceType type="Primary">
@@ -174,7 +174,7 @@ export class ServicesContainer extends React.Component{
       return(
         <div className="services2Container row text-uppercase">
           <div className="col-lg-12 pb-2">
-            <h4>Sanitizacion e higiene</h4>
+            <h4 className="fjalla">Sanitizacion e higiene</h4>
           </div>
           <ServiceDescription>
             <ServiceType type="Primary">
