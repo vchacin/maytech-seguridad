@@ -11,6 +11,7 @@ import syscom from '../assets/img/Syscom.png';
 
 import { ButtonCustom } from './bootstrap/ButtonCustom';
 import { Contact } from './Contact';
+import { ThanksContainer } from './thanks/ThanksContainer';
 import { InfoContainer } from './info/InfoContainer';
 import { StepContainer } from './steps/StepContainer';
 import { Slider } from './Slider';
@@ -73,7 +74,7 @@ export class Home extends Component {
           <Section id="thanks"> 
             <div className="thanksDiv w-100 sectionPadding text-white text-uppercase">
               <h3 className="sectionTitle fjalla">Te mantenemos seguro</h3>
-              <p className="sectionDescription">Brindamos alternativas de seguridad tecnológica y soluciones integrales para asegurar tu proyecto con numerosos beneficios de manera profesional</p>
+              <p className="sectionDescription font-weight-bold">Brindamos alternativas de seguridad tecnológica y soluciones integrales para asegurar tu proyecto con numerosos beneficios de manera profesional</p>
               <ButtonCustom color="blue-cta" href="https://api.whatsapp.com/send?phone=529842879394&text=Hola%2C%20deseo%20obtener%20mayor%20informaci%C3%B3n%20de%20Maytech%20Seguridad%20electr%C3%B3nica.">Ver más<i className="fas fa-chevron-right ml-3"></i></ButtonCustom>
             </div>
 
@@ -81,7 +82,7 @@ export class Home extends Component {
 
               <div className="row">
 
-                <div className="col-lg-6 d-flex flex-row align-items-center px-lg-5">
+                <div className="col-md-6 d-flex flex-row align-items-center px-lg-5">
                   <div className="thanksItem">
                     <i className="fas fa-user-lock text-white"></i>
                   </div>
@@ -91,35 +92,12 @@ export class Home extends Component {
                   </div>
                 </div>
 
-                <div className="col-lg-6 px-0 py-1 txt-black">
-                  <ul>
+                <div className="col-md-6 px-0 py-1 txt-black">
 
-                    <li className="d-flex align-items-center py-2">
-                      <i className="fas fa-circle pr-3"></i>
-                      <div>
-                        <p className="descriptionTitle mb-0 font-weight-bold">24/7 Soporte técnico</p>
-                        <p className="mb-0">Contamos con soporte técnico especializado</p>
-                      </div>
-                    </li>
+                  <ThanksContainer></ThanksContainer>
 
-                    <li className="d-flex align-items-center pb-2">
-                      <i className="fas fa-circle pr-3"></i>
-                      <div>
-                        <p className="descriptionTitle mb-0 font-weight-bold">Satisfacción asegurada</p>
-                        <p className="mb-0">Ofrecemos 1 año de garantía en nuestra línea</p>
-                      </div>
-                    </li>
-
-                    <li className="d-flex align-items-center">
-                      <i className="fas fa-circle pr-3"></i>
-                      <div>
-                        <p className="descriptionTitle mb-0 font-weight-bold">Marcas líderes</p>
-                        <p className="mb-0">Empleamos las mejores marcas en seguridad</p>
-                      </div>
-                    </li>
-
-                  </ul>
                 </div>
+
               </div>
             </div> 
           </Section>
@@ -139,33 +117,33 @@ export class Home extends Component {
                 <div className="col-md-4 d-flex justify-content-around p-0 m-0">
                   <div className="service2Item col-6 px-2" onClick={() => this.SetService('Industrial')}>
                     <i className="service2Shape fas fa-industry mb-3"></i>
-                    <p className="service2Name txt-black">Industrial</p>
+                    <p className="service2Name txt-black font-weight-bold">Industrial</p>
                   </div>
                   <div className="service2Item col-6 px-2" onClick={() => this.SetService('Hotelero')}>
                     <i className="service2Shape fas fa-hotel mb-3"></i>
-                    <p className="service2Name txt-black">Hotelero</p>
+                    <p className="service2Name txt-black font-weight-bold">Hotelero</p>
                   </div>
                 </div>
 
                 <div className="col-md-4 d-flex justify-content-around p-0 m-0">
                   <div className="service2Item col-6 px-2" onClick={() => this.SetService('Empresarial')}>
                     <i className="service2Shape fas fa-building mb-3"></i>
-                    <p className="service2Name txt-black">Empresarial</p>
+                    <p className="service2Name txt-black font-weight-bold">Empresarial</p>
                   </div>
                   <div className="service2Item col-6 px-2" onClick={() => this.SetService('Arquitecto')}>
                     <i className="service2Shape fas fa-hard-hat mb-3"></i>
-                    <p className="service2Name txt-black">Arquitecto contratista</p>
+                    <p className="service2Name txt-black font-weight-bold">Arquitecto contratista</p>
                   </div>
                 </div>
 
                 <div className="col-md-4 d-flex justify-content-around p-0 m-0">
                   <div className="service2Item col-6 px-2" onClick={() => this.SetService('Hogar')}>
                     <i className="service2Shape fas fa-home mb-3"></i>
-                    <p className="service2Name txt-black">Hogar y condominios</p>
+                    <p className="service2Name txt-black font-weight-bold">Hogar y condominios</p>
                   </div>
                   <div className="service2Item col-6 px-2" onClick={() => this.SetService('Sanitizacion')}>
                     <i className="service2Shape fas fa-hands-wash mb-3"></i>
-                    <p className="service2Name txt-black">Sanitización e higiene</p>
+                    <p className="service2Name txt-black font-weight-bold">Sanitización e higiene</p>
                   </div>
                 </div>
 
@@ -176,7 +154,7 @@ export class Home extends Component {
             </div>
           </Section>
 
-          <Section id="solutions" className="solutionsDiv"> 
+          <Section id="solutions" css="solutionsDiv"> 
             <div className="solutionsText w-100 sectionPadding text-white text-uppercase">
               <h3 className="sectionTitle fjalla">Soluciones integrales</h3>
               <p className="sectionDescription">Realizamos plan de seguridad integral, con profesionales capacitados en gestión y desarrollo de proyectos</p>
@@ -205,7 +183,7 @@ export class Home extends Component {
             </div> 
           </Section>
 
-          <Section id="contact" image="contactDiv sectionPadding2"> 
+          <Section id="contact" css="contactDiv sectionPadding2"> 
               <h3 className="sectionTitle text-white text-uppercase fjalla">Contacto e información</h3>
               <p className="sectionDescription text-white text-uppercase pr-5">Disfrute de todos los beneficios al trabajar con nosotros, el mejor aliado para tu seguridad</p>
                 <div  className="row contactContainer d-flex justify-content-between">
@@ -274,9 +252,9 @@ export class Home extends Component {
                         <textarea type="text" className="form-control" id="inputText" placeholder="Déjanos tu mensaje" maxLength="100"/>
                       </div>
 
-                      <button type="submit" className="btn btn-enviar my-3">Enviar</button>
+                      <button type="submit" className="btn btn-enviar my-3 font-weight-bold text-uppercase">Enviar</button>
 
-                      <div className="form-row d-flex flex-column formDirection px-2">
+                      <div className="form-row d-flex flex-column formDirection px-2 font-weight-bold">
                         <div className="d-flex align-items-center mb-2">
                           <i className="fas fa-map-marker-alt pr-2"></i>
                           <p className="m-0">Playa del Carmen, Quintana Roo - México</p>
@@ -298,13 +276,13 @@ export class Home extends Component {
                 </div>
           </Section>
 
-          <Section id="clients" image="clientsDiv sectionPadding">
+          <Section id="clients" css="clientsDiv sectionPadding">
               <h3 className="sectionTitle txt-black text-uppercase fjalla">Nuestros clientes maytech</h3>
               <div className="row d-flex align-items-center py-lg-3">
-                <div className="col-lg-6 px-0">
+                <div className="col-md-6 px-0">
                   <h4 className="txt-black text-uppercase fjalla">Tu mejor aliado en seguridad</h4>
                 </div>
-                <div className="col-lg-6 px-0">
+                <div className="col-md-6 px-0">
                   <ul className="list-unstyled txt-black text-uppercase font-weight-bold">
                     <li>5 años de experiencia</li>
                     <li>Cobertura regional en el sureste mexicano</li>
@@ -323,7 +301,7 @@ export class Home extends Component {
               <h3 className="sectionTitle text-white text-uppercase fjalla">Mantente actualizado</h3>
               <div className="d-flex flex-column flex-lg-row justify-content-between">
 
-                <div className="blogItem col-lg-6 d-flex flex-column justify-content-between bg-light mr-2 py-2 px-4">
+                <div className="blogItem col-md-6 d-flex flex-column justify-content-between bg-light mr-2 py-2 px-4">
                   <div>
                     <h5 className="text-uppercase fjalla">7 herramientas básicas para todo técnico en cctv, control de acceso y alarmas</h5>
                     <p className="m-0">10 octubre, 2020</p>
@@ -334,7 +312,7 @@ export class Home extends Component {
                   </div>
                 </div>
 
-                <div className="blogItem col-lg-6 d-flex flex-column justify-content-between bg-light ml-lg-2 py-2 px-4">
+                <div className="blogItem col-md-6 d-flex flex-column justify-content-between bg-light ml-lg-2 py-2 px-4">
                   <div>
                     <h5 className="text-uppercase fjalla">Organiza tu plan de acción</h5>
                     <p className="m-0">19 junio, 2020</p>
@@ -350,9 +328,9 @@ export class Home extends Component {
 
             <div className="footerDiv row d-flex align-items-start w-100 sectionPadding1 mb-2">
                 
-                <div className="col-md-4 pl-lg-0 pt-4">
+                <div className="col-md-4 px-md-0 pt-4">
                   <img src={logo} alt="logo maytech" className="mb-2"/>
-                  <p className="text-white pr-5 mb-3">Venta e instalación de equipos de seguridad, control y automatización con tecnología de vanguardia</p>
+                  <p className="text-white font-weight-lighter pr-5 mb-3 md-mb-5">Venta e instalación de equipos de seguridad, control y automatización con tecnología de vanguardia</p>
                   <div className="rrss">
                     <a href="https://www.facebook.com/maytechseguridad" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
                     <a href="https://api.whatsapp.com/send?phone=529842879394&text=Hola%2C%20deseo%20obtener%20mayor%20informaci%C3%B3n%20de%20Maytech%20Seguridad%20electr%C3%B3nica."><i className="fab fa-whatsapp"></i></a>
@@ -364,19 +342,19 @@ export class Home extends Component {
                 <div className="col-md-4 pt-4">
                   <h5 className="footerTittle text-white text-uppercase fjalla">Contáctanos</h5>
                   <div className="footerLine mb-2 mb-lg-4"></div>
-                  <p className="text-white">Playa del Carmen, México<br/><br/>
+                  <p className="text-white font-weight-lighter">Playa del Carmen, México<br/><br/>
                     teléfono : <span className="font-weight-bold">+(521) 984 287 9394</span><br/>
                     email : <span className="font-weight-bold">info@maytechseguridad.com</span>
                   </p>
                 </div>
 
-                <div className="col-md-4 pr-lg-0 pt-2 pt-lg-4 pb-sm-3">
+                <div className="col-md-4 pr-md-0 pt-2 pt-md-4 pb-sm-3">
                   <h5 className="footerTittle text-white text-uppercase fjalla">Suscríbete</h5>
-                  <div className="footerLine mb-2 mb-lg-4"></div>
-                  <p className="text-white pr-5">Suscríbete y recibe increíbles descuentos</p>
+                  <div className="footerLine mb-md-2 mb-lg-4"></div>
+                  <p className="text-white pr-lg-5 font-weight-lighter">Suscríbete y recibe increíbles descuentos</p>
                   <form>
-                    <input className="mb-3 px-2" placeholder="Déjanos tu correo electrónico"></input><br/>
-                    <button type="submit" className="text-uppercase mb-3">Enviar<i className="fas fa-chevron-right ml-3"></i></button>
+                    <input className="mb-md-3 px-2" placeholder="Déjanos tu correo electrónico"></input><br/>
+                    <button type="submit font-weight-bold" className="text-uppercase mb-3">Enviar<i className="fas fa-chevron-right ml-3"></i></button>
                   </form>
                 </div>
 

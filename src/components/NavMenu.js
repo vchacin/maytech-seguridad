@@ -8,7 +8,7 @@ export class NavMenu extends Component {
   render () {
     return (
         <header>
-            <nav className="navbar bg-transparent navbar-dark fixed-top navbar-expand-md paddingXaxis" id="mainNav">
+            <nav className="navbar bg-transparent navbar-dark fixed-top navbar-expand-xl paddingXaxis" id="mainNav">
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i className="fa fa-bars fa-2x text-white"></i>
               </button>

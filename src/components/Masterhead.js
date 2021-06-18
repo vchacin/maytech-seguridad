@@ -10,9 +10,9 @@ export class Masterhead extends React.Component {
                     <img className="mb-3" src={logo} alt="logo maytech"/>
                     <div className="d-flex flex-row align-items-center">
                         <div className="divisionLine mr-2"></div>
-                        <div className="masthead-subheading text-uppercase">Diseño de sistemas adaptados a tu necesidad</div>
+                        <div className="masthead-subheading text-uppercase font-weight-bold">Diseño de sistemas adaptados a tu necesidad</div>
                     </div>
-                    <div className="masthead-heading text-uppercase">SEGURIDAD ELECTRÓNICA PARA TODOS <div className="titleHighlighted">TUS PROYECTOS</div></div>
+                    <div className="masthead-heading text-uppercase">SEGURIDAD ELECTRÓNICA PARA TODOS <div className="titleHighlighted font-weight-bold">TUS PROYECTOS</div></div>
                 </div>
                 <a href="#info"><img className="arrowDown" src={arrowDown} alt="arrow down"/></a>
             </header>
